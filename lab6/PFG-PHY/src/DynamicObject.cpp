@@ -15,9 +15,22 @@ DynamicObject::DynamicObject()
 	// No forces act on the object to start with
 	_force = glm::vec3(0.0f, 0.0f, 0.0f);
 	_velocity = glm::vec3(0.0f, 0.0f, 0.0f);
+
 	_mass = 1.0f;
 	_bRadius = 1.0f;
 	_previous_position = glm::vec3(0.0f);
+
+	//Initialise angular dynamics parameters
+	_torque = glm::vec3(0.0f, 0.0f, 0.0f);
+	_angular_velocity = glm::vec3(0.0f, 0.0f, 0.0f);
+	_angular_momentum = glm::vec3(0.0f, 0.0f, 0.0f);
+
+	//Set the rotation matrix to identity matrix
+	_R = glm::mat3(1.0f, 0.0f, 0.0f,
+		0.0f, 1.0f, 0.0f,
+		0.0f, 0.0f, 1.0f);
+
+	global_dampping = 12.0f;
 
 	setMass(1.0f);
 }
@@ -29,7 +42,54 @@ void DynamicObject::setMass(float m)
 {
 	_mass = m;
 
+	setInertiaTensor();
+
 }
+
+void DynamicObject::setInertiaTensor()
+{
+	glm::mat3 body_inertia;
+
+	body_inertia = glm::mat3{
+		(2.0f / 5.0f) * _mass * std::pow(_bRadius, 2),0,0,
+		0, (2.0f / 5.0f) * _mass * std::pow(_bRadius, 2),0,
+		0,0, (2.0f / 5.0f) * _mass * std::pow(_bRadius,2)
+	};
+
+	_body_inertia_tensor_inverse = glm::inverse(body_inertia);
+
+	computeInverseInertiaTensor();
+}
+
+void DynamicObject::computeInverseInertiaTensor()
+{
+	_inertia_tensor_inverse = _R * _body_inertia_tensor_inverse * glm::transpose(_R);
+}
+
+glm::vec3 DynamicObject::computeTorque(glm::vec3 torque_arm, glm::vec3 contact_force)
+{
+	glm::vec3 torque = (glm::cross(contact_force, torque_arm));
+
+	return torque;
+}
+
+glm::vec3 DynamicObject::frictionForce(glm::vec3 relative_velocity, glm::vec3 contact_normal, glm::vec3 force_normal, float mu)
+{
+	glm::vec3 friction_force;
+	glm::vec3 forward_relative_velocity = relative_velocity - glm::dot(relative_velocity, contact_normal) * contact_normal;
+	float tangent_length = glm::length(forward_relative_velocity);
+	if (tangent_length > 1e-6f) //0.000001 (a millionth)
+	{
+		// normalised vector as direction of travel
+		glm::vec3 forward_direction = glm::normalize(forward_relative_velocity);
+		//frition direction is opposite of travel
+		glm::vec3 friction_direction = -forward_direction;
+		friction_force = friction_direction * mu * glm::length(force_normal);
+		return friction_force;
+	}
+	else return glm::vec3(0);
+}
+
 void DynamicObject::update(float deltaTs)
 {
 

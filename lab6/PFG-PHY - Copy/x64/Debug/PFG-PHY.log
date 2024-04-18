@@ -1,0 +1,27 @@
+﻿  DynamicObject.cpp
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\phy.h(248,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\phy.h(241,1): message : while compiling class template member function 'void phy::Object<unsigned char>::Impl::send(std::string)'
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\phy.h(120,11): message : see reference to function template instantiation 'void phy::Object<unsigned char>::Impl::send(std::string)' being compiled
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\phy.h(68,1): message : see reference to class template instantiation 'phy::Object<unsigned char>::Impl' being compiled
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\phy.h(67,1): message : while compiling class template member function 'void phy::Object<unsigned char>::setPosition(float,float,float)'
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\DynamicObject.h(57,22): message : see reference to function template instantiation 'void phy::Object<unsigned char>::setPosition(float,float,float)' being compiled
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\DynamicObject.h(19,1): message : see reference to class template instantiation 'phy::Object<unsigned char>' being compiled
+  KinematicsObject.cpp
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\phy.h(248,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\phy.h(241,1): message : while compiling class template member function 'void phy::Object<unsigned char>::Impl::send(std::string)'
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\phy.h(120,11): message : see reference to function template instantiation 'void phy::Object<unsigned char>::Impl::send(std::string)' being compiled
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\phy.h(68,1): message : see reference to class template instantiation 'phy::Object<unsigned char>::Impl' being compiled
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\phy.h(67,1): message : while compiling class template member function 'void phy::Object<unsigned char>::setPosition(float,float,float)'
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\KinematicsObject.h(26,22): message : see reference to function template instantiation 'void phy::Object<unsigned char>::setPosition(float,float,float)' being compiled
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\KinematicsObject.h(8,1): message : see reference to class template instantiation 'phy::Object<unsigned char>' being compiled
+  main.cpp
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\phy.h(248,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\phy.h(241,1): message : while compiling class template member function 'void phy::Object<unsigned char>::Impl::send(std::string)'
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\phy.h(159,11): message : see reference to function template instantiation 'void phy::Object<unsigned char>::Impl::send(std::string)' being compiled
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\phy.h(88,1): message : see reference to class template instantiation 'phy::Object<unsigned char>::Impl' being compiled
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\phy.h(87,1): message : while compiling class template member function 'void phy::Object<unsigned char>::setType(int)'
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\main.cpp(19,11): message : see reference to function template instantiation 'void phy::Object<unsigned char>::setType(int)' being compiled
+D:\Physics-for-Games\lab6\PFG-PHY - Copy\src\KinematicsObject.h(8,1): message : see reference to class template instantiation 'phy::Object<unsigned char>' being compiled
+  Utility.cpp
+  Generating Code...
+  PFG-PHY.vcxproj -> D:\Physics-for-Games\lab6\PFG-PHY - Copy\x64\Debug\PFG-PHY.exe
