@@ -15,6 +15,12 @@
 *
 */
 
+struct CollisionPlane
+{
+	glm::vec3 normal;
+	glm::vec3 position;
+};
+
 class DynamicObject : public Object
 {
 public:
@@ -35,6 +41,7 @@ public:
 	void computeCollisionRes(float deltaTs);
 	void spheresCollisionResponse();
 	void applyImpulseResponses(DynamicObject* objA, DynamicObject* objB);
+
 	
 
 
@@ -64,6 +71,7 @@ public:
 	const glm::vec3 getPosition() const { return _position;}
     const float getMass() const { return _mass; }
 	const float getBoundingRadius() const { return _bRadius; }
+	void planeCollisionResponse(CollisionPlane _other, float deltaTs);
 
 	//angular motions
 	void addTorque(const glm::vec3 torque) { _torque += torque; }
