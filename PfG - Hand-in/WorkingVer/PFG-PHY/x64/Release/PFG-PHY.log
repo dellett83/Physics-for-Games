@@ -1,0 +1,72 @@
+﻿  DynamicObject.cpp
+D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(248,25): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'src/DynamicObject.cpp')
+  D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(248,25):
+  the template instantiation context (the oldest one first) is
+  	D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\DynamicObject.h(27,30):
+  	see reference to class template instantiation 'phy::Object<unsigned char>' being compiled
+  	D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(71,8):
+  	while compiling class template member function 'void phy::Object<unsigned char>::setRotation(float,float,float)'
+  		D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\DynamicObject.cpp(150,13):
+  		see the first reference to 'phy::Object<unsigned char>::setRotation' in 'DynamicObject::update'
+  	D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(105,10):
+  	while compiling class 'phy::Object<unsigned char>::Impl'
+  	D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(240,10):
+  	while compiling class template member function 'void phy::Object<unsigned char>::Impl::send(std::string)'
+  		D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(130,11):
+  		see the first reference to 'phy::Object<unsigned char>::Impl::send' in 'phy::Object<unsigned char>::Impl::setRotation'
+  		D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(73,22):
+  		see the first reference to 'phy::Object<unsigned char>::Impl::setRotation' in 'phy::Object<unsigned char>::setRotation'
+  		D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\DynamicObject.cpp(150,13):
+  		see the first reference to 'phy::Object<unsigned char>::setRotation' in 'DynamicObject::update'
+  
+  KinematicsObject.cpp
+D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(248,25): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'src/KinematicsObject.cpp')
+  D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(248,25):
+  the template instantiation context (the oldest one first) is
+  	D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\KinematicsObject.h(7,33):
+  	see reference to class template instantiation 'phy::Object<unsigned char>' being compiled
+  	D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(66,8):
+  	while compiling class template member function 'void phy::Object<unsigned char>::setPosition(float,float,float)'
+  		D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\KinematicsObject.h(25,22):
+  		see the first reference to 'phy::Object<unsigned char>::setPosition' in 'KinematicsObject::setPosition'
+  	D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(105,10):
+  	while compiling class 'phy::Object<unsigned char>::Impl'
+  	D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(240,10):
+  	while compiling class template member function 'void phy::Object<unsigned char>::Impl::send(std::string)'
+  		D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(120,11):
+  		see the first reference to 'phy::Object<unsigned char>::Impl::send' in 'phy::Object<unsigned char>::Impl::setPosition'
+  		D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(68,22):
+  		see the first reference to 'phy::Object<unsigned char>::Impl::setPosition' in 'phy::Object<unsigned char>::setPosition'
+  		D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\KinematicsObject.h(25,22):
+  		see the first reference to 'phy::Object<unsigned char>::setPosition' in 'KinematicsObject::setPosition'
+  
+  main.cpp
+D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(248,25): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'src/main.cpp')
+  D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(248,25):
+  the template instantiation context (the oldest one first) is
+  	D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\KinematicsObject.h(7,33):
+  	see reference to class template instantiation 'phy::Object<unsigned char>' being compiled
+  	D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(86,8):
+  	while compiling class template member function 'void phy::Object<unsigned char>::setType(int)'
+  		D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\main.cpp(32,11):
+  		see the first reference to 'phy::Object<unsigned char>::setType' in 'main'
+  	D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(105,10):
+  	while compiling class 'phy::Object<unsigned char>::Impl'
+  	D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(240,10):
+  	while compiling class template member function 'void phy::Object<unsigned char>::Impl::send(std::string)'
+  		D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(159,11):
+  		see the first reference to 'phy::Object<unsigned char>::Impl::send' in 'phy::Object<unsigned char>::Impl::setColor'
+  		D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(83,19):
+  		see the first reference to 'phy::Object<unsigned char>::Impl::setColor' in 'phy::Object<unsigned char>::setColor'
+  		D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\main.cpp(33,12):
+  		see the first reference to 'phy::Object<unsigned char>::setColor' in 'main'
+  
+  Utility.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 357 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  PFG-PHY.vcxproj -> D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\x64\Release\PFG-PHY.exe

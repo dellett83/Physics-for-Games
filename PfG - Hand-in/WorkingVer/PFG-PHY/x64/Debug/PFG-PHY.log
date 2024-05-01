@@ -1,0 +1,23 @@
+﻿  main.cpp
+D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(248,25): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'src/main.cpp')
+  D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(248,25):
+  the template instantiation context (the oldest one first) is
+  	D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\KinematicsObject.h(7,33):
+  	see reference to class template instantiation 'phy::Object<unsigned char>' being compiled
+  	D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(86,8):
+  	while compiling class template member function 'void phy::Object<unsigned char>::setType(int)'
+  		D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\main.cpp(32,11):
+  		see the first reference to 'phy::Object<unsigned char>::setType' in 'main'
+  	D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(105,10):
+  	while compiling class 'phy::Object<unsigned char>::Impl'
+  	D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(240,10):
+  	while compiling class template member function 'void phy::Object<unsigned char>::Impl::send(std::string)'
+  		D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(159,11):
+  		see the first reference to 'phy::Object<unsigned char>::Impl::send' in 'phy::Object<unsigned char>::Impl::setColor'
+  		D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\phy.h(83,19):
+  		see the first reference to 'phy::Object<unsigned char>::Impl::setColor' in 'phy::Object<unsigned char>::setColor'
+  		D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\src\main.cpp(33,12):
+  		see the first reference to 'phy::Object<unsigned char>::setColor' in 'main'
+  
+  PFG-PHY.vcxproj -> D:\Users\danie\Documents\University and Games\Physics-for-Games\lab6\PFG-PHY\x64\Debug\PFG-PHY.exe
